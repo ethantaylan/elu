@@ -26,14 +26,24 @@ html, body {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 10px;
+  top: -15px;
   border: 1px solid orange;
-  background-color: rgba(25, 25, 25, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+  background-color: rgba(25, 25, 25, 0.7);
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* line 32, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
+.logo:hover {
+  box-shadow: 0 0 50px rgba(250, 150, 50, 0.5);
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* line 40, ../sass/main.sass */
 main {
   margin: 0 auto;
   max-width: 1440px;
@@ -43,9 +53,12 @@ main {
   height: 100%;
   box-shadow: 0 0 40px black;
   border: 2px solid #191919;
+  border-top: none;
+  border-bottom: none;
+  position: relative;
 }
 
-/* line 42, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 .twitter {
   background-image: url("../ressources/twitter-grey.png");
   background-size: contain;
@@ -54,13 +67,14 @@ main {
   width: 20px;
 }
 
-/* line 49, ../sass/main.sass */
+/* line 60, ../sass/main.sass */
 .twitter:hover {
   background-image: url("../ressources/twitter.png");
   cursor: pointer;
+  transition: 0.5s;
 }
 
-/* line 53, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 .youtube {
   background-image: url("../ressources/youtube-grey.png");
   background-size: contain;
@@ -69,28 +83,31 @@ main {
   width: 20px;
 }
 
-/* line 60, ../sass/main.sass */
+/* line 72, ../sass/main.sass */
 .youtube:hover {
   background-image: url("../ressources/youtube.png");
   cursor: pointer;
+  transition: 0.5s;
 }
 
-/* line 64, ../sass/main.sass */
+/* line 78, ../sass/main.sass */
 .facebook {
   background-image: url("../ressources/fb-grey.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
   width: 20px;
+  transition: 0.5s;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 87, ../sass/main.sass */
 .facebook:hover {
   background-image: url("../ressources/fb.png");
   cursor: pointer;
+  transition: 0.5s;
 }
 
-/* line 75, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 ol {
   display: flex;
   flex-direction: row;
@@ -98,39 +115,40 @@ ol {
   padding-left: 0;
   margin: 0;
   width: 100%;
-  margin-top: 15px;
   justify-content: space-around;
 }
 
-/* line 85, ../sass/main.sass */
+/* line 101, ../sass/main.sass */
 .follow {
   margin-right: 20px;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 104, ../sass/main.sass */
 .follow-me {
   font-family: Montserrat-Bold, sans-serif;
   color: #818181;
   font-size: 15px;
 }
 
-/* line 93, ../sass/main.sass */
+/* line 109, ../sass/main.sass */
 header {
   width: 100%;
   display: flex;
   background-repeat: no-repeat;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
-/* line 101, ../sass/main.sass */
+/* line 116, ../sass/main.sass */
 .left-nav {
   justify-content: flex-start;
   width: 25%;
   border-bottom: 1px solid #818181;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 124, ../sass/main.sass */
 .right-nav {
   color: white;
   font-family: Montserrat-SemiBold, sans-serif;
@@ -139,14 +157,52 @@ header {
   height: 50px;
   align-items: center;
   background-color: rgba(25, 25, 25, 0.7);
+  margin-right: 20px;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
 }
 
-/* line 116, ../sass/main.sass */
+/* line 140, ../sass/main.sass */
 .li-right:hover {
-  transition: color 0.5s, padding-bottom 1s;
-  display: flex;
+  transition: color 0.5s;
   color: orange;
   cursor: pointer;
-  border-bottom: 1px solid orange;
-  padding-bottom: 10px;
+}
+
+/* line 145, ../sass/main.sass */
+.nav-absolute {
+  background-color: rgba(240, 24, 24, 0.7);
+  height: 0.01px;
+  width: 200px;
+  display: flex;
+  position: absolute;
+  left: 5%;
+  margin-top: 100px;
+}
+
+/* line 154, ../sass/main.sass */
+.btn-nav-absolute {
+  position: absolute;
+  left: 20px;
+  background-image: url("../ressources/toggle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  border: 1px solid orange;
+  padding: 28px;
+}
+/* line 163, ../sass/main.sass */
+.btn-nav-absolute:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-image: url("../ressources/toggle-hover.png");
+}
+
+/* line 168, ../sass/main.sass */
+.menu {
+  margin-left: 25px;
+  margin-top: 20px;
+  color: #8b8b8b;
 }

@@ -23,11 +23,19 @@ html, body
     position: absolute
     left: 50%
     transform: translate(-50%)
-    top: 10px
+    top: -15px
     border: 1px solid orange
-    background-color: rgba(25, 25, 25, 0.5)
-    padding: 20px
-    border-radius: 10px
+    background-color: rgba(25, 25, 25, 0.7)
+    padding-left: 10px
+    padding-right: 15px
+    border-radius: 15px
+    padding-top: 10px
+    padding-bottom: 10px
+
+.logo:hover
+    box-shadow: 0 0 50px rgba(250, 150, 50, 0.5)
+    transition: 1s
+    cursor: pointer
 
 main
     margin: 0 auto
@@ -38,6 +46,9 @@ main
     height: 100%
     box-shadow: 0 0 40px black
     border: 2px solid rgb(25, 25, 25)
+    border-top: none
+    border-bottom: none
+    position: relative
 
 .twitter
     background-image: url("../ressources/twitter-grey.png")
@@ -49,6 +60,7 @@ main
 .twitter:hover
     background-image: url("../ressources/twitter.png")
     cursor: pointer
+    transition: 0.5s
 
 .youtube
     background-image: url("../ressources/youtube-grey.png")
@@ -60,6 +72,8 @@ main
 .youtube:hover
     background-image: url("../ressources/youtube.png")
     cursor: pointer
+    transition: 0.5s
+
 
 .facebook
     background-image: url("../ressources/fb-grey.png")
@@ -67,10 +81,13 @@ main
     background-repeat: no-repeat
     height: 20px
     width: 20px
+    transition: 0.5s
+
 
 .facebook:hover
     background-image: url("../ressources/fb.png")
     cursor: pointer
+    transition: 0.5s
 
 ol
     display: flex
@@ -79,7 +96,6 @@ ol
     padding-left: 0
     margin: 0
     width: 100%
-    margin-top: 15px
     justify-content: space-around
 
 .follow
@@ -95,13 +111,15 @@ header
     display: flex
     background-repeat: no-repeat
     justify-content: space-between
-    margin-top: 20px
 
     
 .left-nav
     justify-content: flex-start
     width: 25%
     border-bottom: 1px solid rgb(129, 129, 129)
+    align-items: center
+    display: flex
+    margin-top: 10px
 
 .right-nav
     color: white
@@ -111,12 +129,45 @@ header
     height: 50px
     align-items: center
     background-color: rgba(25, 25, 25, 0.7)
+    margin-right: 20px
+    border-radius: 50px
+    align-items: center
+    display: flex
+    margin-top: 10px
+    
 
 
 .li-right:hover
-    transition: color 0.5s, padding-bottom 1s
-    display: flex
+    transition: color 0.5s
     color: orange
     cursor: pointer
-    border-bottom: 1px solid orange
-    padding-bottom: 10px
+
+.nav-absolute
+    background-color: rgba(240, 24, 24, 0.7)
+    height: 0.01px
+    width: 200px
+    display: flex
+    position: absolute
+    left: 5%
+    margin-top: 100px
+
+.btn-nav-absolute
+    position: absolute
+    left: 20px
+    background-image: url("../ressources/toggle.png")
+    background-repeat: no-repeat
+    background-position: center
+    margin-top: 20px
+    border: 1px solid orange
+    padding: 28px
+    &:hover
+        transition: 0.5s
+        cursor: pointer
+        background-image: url("../ressources/toggle-hover.png")
+
+.menu
+    margin-left: 25px
+    margin-top: 20px
+    color: rgba(139, 139, 139, 1)
+
+
