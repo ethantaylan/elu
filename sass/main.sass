@@ -1,0 +1,122 @@
+@font-face 
+    font-family: "Montserrat-Regular"
+    src: url("../ressources/Montserrat-Regular.ttf")
+
+@font-face 
+    font-family: "Montserrat-SemiBold"
+    src: url("../ressources/Montserrat-SemiBold.ttf")
+
+@font-face 
+    font-family: "Montserrat-Bold"
+    src: url("../ressources/Montserrat-Bold.ttf")
+
+html, body
+    margin: 0
+    background-color: black
+    height: 100%
+    width: 100%
+    background-image: url("../ressources/bg-body.png")
+    font-family: Montserrat-Bold, sans-serif
+
+.logo
+    object-fit: contain
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    top: 10px
+    border: 1px solid orange
+    background-color: rgba(25, 25, 25, 0.5)
+    padding: 20px
+    border-radius: 10px
+
+main
+    margin: 0 auto
+    max-width: 1440px
+    background-image: url("../ressources/bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100%
+    box-shadow: 0 0 40px black
+    border: 2px solid rgb(25, 25, 25)
+
+.twitter
+    background-image: url("../ressources/twitter-grey.png")
+    background-size: contain
+    background-repeat: no-repeat
+    height: 20px
+    width: 20px
+
+.twitter:hover
+    background-image: url("../ressources/twitter.png")
+    cursor: pointer
+
+.youtube
+    background-image: url("../ressources/youtube-grey.png")
+    background-size: contain
+    background-repeat: no-repeat
+    height: 20px
+    width: 20px
+
+.youtube:hover
+    background-image: url("../ressources/youtube.png")
+    cursor: pointer
+
+.facebook
+    background-image: url("../ressources/fb-grey.png")
+    background-size: contain
+    background-repeat: no-repeat
+    height: 20px
+    width: 20px
+
+.facebook:hover
+    background-image: url("../ressources/fb.png")
+    cursor: pointer
+
+ol
+    display: flex
+    flex-direction: row
+    list-style-type: none
+    padding-left: 0
+    margin: 0
+    width: 100%
+    margin-top: 15px
+    justify-content: space-around
+
+.follow
+    margin-right: 20px
+
+.follow-me
+    font-family: Montserrat-Bold, sans-serif
+    color: rgb(129, 129, 129)
+    font-size: 15px
+
+header
+    width: 100%
+    display: flex
+    background-repeat: no-repeat
+    justify-content: space-between
+    margin-top: 20px
+
+    
+.left-nav
+    justify-content: flex-start
+    width: 25%
+    border-bottom: 1px solid rgb(129, 129, 129)
+
+.right-nav
+    color: white
+    font-family: Montserrat-SemiBold, sans-serif
+    justify-content: flex-end
+    width: 33%
+    height: 50px
+    align-items: center
+    background-color: rgba(25, 25, 25, 0.7)
+
+
+.li-right:hover
+    transition: color 0.5s, padding-bottom 1s
+    display: flex
+    color: orange
+    cursor: pointer
+    border-bottom: 1px solid orange
+    padding-bottom: 10px
