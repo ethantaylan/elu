@@ -29,9 +29,39 @@
                 </ol>
             </nav>
         </header>
+        <div class="partenaire">
+            <ol>
+                <li><img class="partenaire-img" src="/ressources/win.png" alt=""></li>
+                <li><img class="partenaire-img" src="/ressources/blacksea.png" alt=""></li>
+                <li><img class="partenaire-img" src="/ressources/dasi.png" alt=""></li>
+            </ol>
+        </div>
+        <div class="mid-container">
+        <div class="menu">
         <div onclick="function showHide()" id="menuBtn" class="btn-nav-absolute"></div>
         <nav id="menu" class="nav-absolute">
+            <li class="li-menu">Eludoc<img class="saturate" src="/ressources/gdoc.png" alt=""></li>
+            <li class="li-menu">WeekAuras<img class="saturate" src="/ressources/weekauras.png" alt=""></li>
+            <li class="li-menu">Discord<img class="saturate" src="/ressources/discord-logo.png" alt=""></li>
+            <li class="li-menu">Raider.IO<img class="saturate" src="/ressources/raiderio.png" alt=""></li>
+            <li class="li-menu">Warcraftlogs<img class="saturate" src="/ressources/wclogs.png" alt=""></li>
+            <li class="li-menu">WoWProgress<img class="saturate" src="/ressources/WoWprogress.png" alt=""></li>
         </nav>
+    </div>
+        <div id="twitch-embed" class="twitch-box"></div>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 850,
+            height: 480,
+            channel: "elu_tw",
+          });
+        </script>
+        </div>
     </main>
 </body>
 </html>

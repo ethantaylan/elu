@@ -102,7 +102,7 @@ ol
     margin-right: 20px
 
 .follow-me
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Montserrat-SemiBold, sans-serif
     color: rgb(129, 129, 129)
     font-size: 15px
 
@@ -115,7 +115,7 @@ header
     
 .left-nav
     justify-content: flex-start
-    width: 25%
+    width: 33%
     border-bottom: 1px solid rgb(129, 129, 129)
     align-items: center
     display: flex
@@ -143,21 +143,26 @@ header
     cursor: pointer
 
 .nav-absolute
-    background-color: rgba(240, 24, 24, 0.7)
-    height: 0.01px
+    background-color: rgba(0, 0, 0, 0.5)
+    height: 400px
     width: 200px
     display: flex
-    position: absolute
-    left: 5%
-    margin-top: 100px
-
-.btn-nav-absolute
-    position: absolute
     left: 20px
+    align-items: start
+    border: 1px solid orange
+    color: white
+    justify-content: space-around
+    flex-direction: column
+    align-items: center
+    font-family: Montserrat, sans-serif
+    font-size: 15px
+    margin-top: 10px
+.btn-nav-absolute
+    width: 0px
+    height: 0px
     background-image: url("../ressources/toggle.png")
     background-repeat: no-repeat
     background-position: center
-    margin-top: 20px
     border: 1px solid orange
     padding: 28px
     &:hover
@@ -165,9 +170,44 @@ header
         cursor: pointer
         background-image: url("../ressources/toggle-hover.png")
 
-.menu
-    margin-left: 25px
-    margin-top: 20px
-    color: rgba(139, 139, 139, 1)
+.li-menu
+    display: flex
+    align-items: center
+    width: 80%
+    justify-content: space-between
+    transition: 0.5s
+    filter: saturate(0)
+    &:hover
+        filter: saturate(1)
+        transition: 0.5s
+        color: orange
 
+.twitch-box
+    right: 5%
+    border: 1px orange solid
+
+.mid-container
+    display: flex
+    flex-direction: row
+    position: absolute
+    bottom: 15%
+    justify-content: space-between
+    width: 95%
+
+.menu
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+
+.partenaire
+    background-color: rgba(0, 0, 0, 0.5)
+    width: 410px
+    height: 95px
+    margin-top: 40px
+    margin-left: 20px
+    border: solid 1px orange
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
 
