@@ -144,7 +144,7 @@ header
 
 .nav-absolute
     background-color: rgba(0, 0, 0, 0.5)
-    height: 400px
+    height: 300px
     width: 200px
     display: flex
     left: 20px
@@ -157,9 +157,11 @@ header
     font-family: Montserrat, sans-serif
     font-size: 15px
     margin-top: 10px
+    transition: 1s
+    visibility: hidden
 .btn-nav-absolute
-    width: 0px
-    height: 0px
+    width: 5px
+    height: 5px
     background-image: url("../ressources/toggle.png")
     background-repeat: no-repeat
     background-position: center
@@ -175,24 +177,25 @@ header
     align-items: center
     width: 80%
     justify-content: space-between
-    transition: 0.5s
     filter: saturate(0)
+    height: 300px
     &:hover
         filter: saturate(1)
         transition: 0.5s
         color: orange
+        cursor: pointer
 
 .twitch-box
     right: 5%
     border: 1px orange solid
-
+    height: 100%
 .mid-container
     display: flex
     flex-direction: row
-    position: absolute
-    bottom: 15%
     justify-content: space-between
     width: 95%
+    margin: 0 auto
+    margin-top: 60px
 
 .menu
     display: flex
