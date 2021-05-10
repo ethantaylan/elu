@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
     <script type="text/javascript" src="/index.js"></script>
 </head>
-<body>
+<body id="home">
     <main>
         <header>
             <div class="partenaire">
@@ -20,14 +20,17 @@
             </div>
             <img class="logo" src="ressources/logo.png" alt="">
             <nav class="right-nav">
+                <!--HOME-->
                 <ol>
-                    <li class="li-right">Home</li>
-                    <li class="li-right">Planning</li>
-                    <li class="li-right">About me</li>
-                    <li class="li-right">Contact</li>
-                    <li class="li-right">Twitch</li>
+                    <a href="#home" class="link-style"><li class="li-right">Home</li></a>
+                    <a href="#planning" class="link-style"></a><li class="li-right">Planning</li>
+                    <a href="#aboutme" class="link-style"><li class="li-right">About me</li></a>
+                    <a href="#planning" class="link-style"></a><li class="li-right">Contact</li>
                 </ol>
+                <p class="twitch-nav">Twitch</p>
+
             </nav>
+    
         </header>
         <div class="box-onglets">
             <ol class="onglets">
@@ -70,17 +73,20 @@
                         </h3>
                     <article class="news-article">
                         <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="date">10/10/2010</p>
                         <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
                     </article>
                     <div class="line-break"></div>
                     <article class="news-article">
                         <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="date">10/10/2010</p>
                         <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
                     </article>
                     <div class="line-break"></div>
 
                     <article class="news-article">
                         <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="date">10/10/2010</p>
                         <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
                     </article>
                 </section>
@@ -93,5 +99,28 @@
             </ol>
         </nav>
     </main>
+    <!--ABOUT ME-->
+    <div id="aboutme" class="about-me">
+        <header class="header-about-me">
+            <ol class="height-header-about-me ol-header-about-me">
+                <a href="#home" class="link-style"><li class="li-right li-style-about-me">Home</li></a>
+                <a href="#planning" class="link-style"></a><li class="li-right li-style-about-me">Planning</li>
+                <a href="#aboutme" class="link-style active"><li class="li-right li-style-about-me active">About me</li></a>
+                <a href="#planning" class="link-style"></a><li class="li-right li-style-about-me">Contact</li>
+            </ol>
+            <a href="#home" class="link-style"><p class="arrow">^</p></a>
+        </header>
+        <div class="box-about-me">
+            <p class="nom-prenom">Tony L'HUILIER</p>
+            <p class="description-about-me">
+                <span style="font-weight: bold; font-size: 20px;">Bonjour & bienvenue à toi sur mon site.</span> <br><br> Je me présente, <span class="about-me-style">Tony</span>, jeune streamer de 24 ans qui a débuté sur Twitch le 21 mai 2020, sur le jeu <span style="text-decoration: underline;">World of Warcraft.</span> Diplômé d’un Master dans le Sport-Santé, je me suis lancé dans le streaming par passion pour le jeu, mais aussi pour l’esprit de communauté et le partage des différentes expériences.
+
+                <br><br>Basé sur un contenu communautaire, j’aide principalement mes viewers durant mes sessions de streaming et j’aime leur offrir l’opportunité de s’améliorer. En parallèle, je touche à tout l’univers de World of Warcraft, que ce soit le HL en Raid, en Mythic+, mais aussi le côté collection avec les hauts-faits et les montures. <br><br>Certaines personnes me qualifient même de fou et elles ont sûrement raison !
+                
+                Conscient des bienfaits du streaming, je prône l’aspect social et l’échange à travers le contenu que je propose. Dynamique, énergique et ambitieux sont des caractéristiques qui me qualifient et vous pourrez le confirmer de vos propres yeux ! De plus, l’animation est spécifique à chaque streamer, c’est pourquoi j’essaie de vous faire vivre vos meilleurs moments à mes côtés avec de la joie et de la bonne humeur.
+                
+                À bientôt l’ami(e), j’espère te voir très vite ! :smile:</p>
+        </div>
+    </div>
 </body>
 </html>
