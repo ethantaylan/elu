@@ -19,23 +19,21 @@ html, body
     font-family: Montserrat-Bold, sans-serif
 
 .logo
-    object-fit: contain
-    position: absolute
-    left: 50%
-    transform: translate(-50%)
-    top: -15px
-    border: 1px solid orange
-    background-color: rgba(25, 25, 25, 0.7)
-    padding-left: 10px
-    padding-right: 15px
-    border-radius: 15px
-    padding-top: 10px
-    padding-bottom: 10px
-
+    height: 130px
+    border-left: 1px solid dimgray
+    border-right: 1px solid dimgray
+    padding-left: 40px
+    padding-right: 40px
+    width: 100%
+    object-fit: contain 
 .logo:hover
-    box-shadow: 0 0 50px rgba(250, 150, 50, 0.5)
-    transition: 1s
     cursor: pointer
+
+.box-onglets
+    width: 100%
+    display: flex
+    justify-content: center
+    border-top: 1px solid dimgray
 
 main
     margin: 0 auto
@@ -111,38 +109,85 @@ header
     display: flex
     background-repeat: no-repeat
     justify-content: space-between
-
+    background-color: black
+    align-items: center
     
 .left-nav
-    justify-content: flex-start
-    width: 33%
-    border-bottom: 1px solid rgb(129, 129, 129)
+    position: fixed
+    bottom: 1%
     align-items: center
     display: flex
-    margin-top: 10px
+    left: 50%
+    width: 150px
+    transform: translate(-50%)
+    image-rendering: crisp-edges
+    &:hover
+        cursor: pointer
+
+.news
+    padding: 15px
+    width: 270px
+    height: 430px
+    background-color: rgba(0, 0, 0, 0.4)
+    border-radius: 5px
+    display: -webkit-box
+    -webkit-line-clamp: 6
+    -webkit-box-orient: vertical
+    overflow: scroll
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6)
+    border: 1px solid rgba(30, 30, 30, 1)
+    
+.line-break
+    height: 1px
+    width: 100%
+    background-color: orange
+    margin-top: 15px
+    margin-bottom: 15px
+.news-article
+    font-size: 14px
+    color: white
+    font-family: Montserrat-Regular, sans-serif
+    margin-left: 20px
+    margin-right: 20px
+    cursor: pointer
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: 100
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+    overflow: scroll
+    height: 30%
+    padding: 10px
+
+
+.titre-des-news
+    font-family: Montseerrat-SemiBold, sans-serif
+
+.titre-news
+    color: orange
+    font-size: 14px
+    font-family: Montserrat-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    margin-left: 20px
 
 .right-nav
     color: white
-    font-family: Montserrat-SemiBold, sans-serif
+    font-family: Montserrat-Regular, sans-serif
     justify-content: flex-end
-    width: 33%
+    width: 100%
     height: 50px
     align-items: center
-    background-color: rgba(25, 25, 25, 0.7)
-    margin-right: 20px
-    border-radius: 50px
+    background-color: black
     align-items: center
     display: flex
-    margin-top: 10px
+    font-size: 15px
     
-
 
 .li-right:hover
     transition: color 0.5s
     color: orange
     cursor: pointer
 
-.nav-absolute
+/*.nav-absolute
     background-color: rgba(0, 0, 0, 0.5)
     height: 300px
     width: 200px
@@ -158,7 +203,8 @@ header
     font-size: 15px
     margin-top: 10px
     transition: 1s
-    visibility: hidden
+    visibility: hidden */
+
 .btn-nav-absolute
     width: 5px
     height: 5px
@@ -175,27 +221,32 @@ header
 .li-menu
     display: flex
     align-items: center
-    width: 80%
-    justify-content: space-between
     filter: saturate(0)
-    height: 300px
+    height: 50px
+    color: white
+    font-family: Montserrat-Regular, sans-serif
+    font-size: 12px
     &:hover
         filter: saturate(1)
         transition: 0.5s
         color: orange
         cursor: pointer
 
+.saturate
+    margin-left: 15px
+    width: 22px
+
 .twitch-box
-    right: 5%
     border: 1px orange solid
     height: 100%
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.6)
 .mid-container
     display: flex
     flex-direction: row
     justify-content: space-between
     width: 95%
-    margin: 0 auto
-    margin-top: 60px
+    margin-left: 20px
+    margin-top: 20px
 
 .menu
     display: flex
@@ -203,14 +254,27 @@ header
     margin-left: 20px
 
 .partenaire
-    background-color: rgba(0, 0, 0, 0.5)
-    width: 410px
-    height: 95px
-    margin-top: 40px
-    margin-left: 20px
-    border: solid 1px orange
+    width: 100%
+    height: 70px
     display: flex
     flex-direction: row
-    align-items: center
     justify-content: space-between
+    
+.partenaire-img
+    width: 70px
+    object-fit: contain
 
+.li-partenaire
+    display: flex
+    align-items: center
+    cursor: pointer
+
+.blacksea
+    width: 110px
+
+.win
+    width: 55px
+
+.onglets
+    background-color: rgb(20, 20, 20)
+    border-bottom: 1px solid black

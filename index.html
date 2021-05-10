@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elu</title>
     <link rel="stylesheet" href="/stylesheets/main.css">
     <script type="text/javascript" src="/index.js"></script>
 </head>
 <body>
     <main>
         <header>
-            <img class="logo" src="ressources/logo.png" alt="">
-            <nav class="left-nav">
+            <div class="partenaire">
                 <ol>
-                    <li cl class="follow"><span class="follow-me">Follow me</span></li>
-                    <li class="twitter"></li>
-                    <li class="facebook"></li>
-                    <li class="youtube"></li>
+                    <li class="li-partenaire"><img class="partenaire-img win" src="/ressources/win.png" alt=""></li>
+                    <li class="li-partenaire"><img class="partenaire-img blacksea" src="/ressources/blacksea.png" alt=""></li>
+                    <li class="li-partenaire"><img class="partenaire-img dasi" src="/ressources/dasi.png" alt=""></li>
                 </ol>
-            </nav>
+            </div>
+            <img class="logo" src="ressources/logo.png" alt="">
             <nav class="right-nav">
                 <ol>
                     <li class="li-right">Home</li>
                     <li class="li-right">Planning</li>
                     <li class="li-right">About me</li>
                     <li class="li-right">Contact</li>
+                    <li class="li-right">Twitch</li>
                 </ol>
             </nav>
         </header>
-        <div class="partenaire">
-            <ol>
-                <li><img class="partenaire-img" src="/ressources/win.png" alt=""></li>
-                <li><img class="partenaire-img" src="/ressources/blacksea.png" alt=""></li>
-                <li><img class="partenaire-img" src="/ressources/dasi.png" alt=""></li>
+        <div class="box-onglets">
+            <ol class="onglets">
+                <li class="li-menu">Eludoc<img class="saturate" src="/ressources/gdoc.png" alt=""></li>
+                <li class="li-menu">WeekAuras<img class="saturate" src="/ressources/weekauras.png" alt=""></li>
+                <li class="li-menu">Discord<img class="saturate" src="/ressources/discord-logo.png" alt=""></li>
+                <li class="li-menu">Raider.IO<img class="saturate" src="/ressources/raiderio.png" alt=""></li>
+                <li class="li-menu">Warcraftlogs<img class="saturate" src="/ressources/wclogs.png" alt=""></li>
+                <li class="li-menu">WoWProgress<img class="saturate" src="/ressources/WoWprogress.png" alt=""></li>
             </ol>
         </div>
         <div class="mid-container">
-        <div class="menu">
+<!--  <div class="menu">
         <div onclick="showHide()" id="btn" class="btn-nav-absolute"></div>
         <nav id="boite" class="nav-absolute">
             <li class="li-menu">Eludoc<img class="saturate" src="/ressources/gdoc.png" alt=""></li>
@@ -47,21 +50,48 @@
             <li class="li-menu">Warcraftlogs<img class="saturate" src="/ressources/wclogs.png" alt=""></li>
             <li class="li-menu">WoWProgress<img class="saturate" src="/ressources/WoWprogress.png" alt=""></li>
         </nav>
-    </div>
+    </div>-->
         <div id="twitch-embed" class="twitch-box"></div>
 
-        <!-- Load the Twitch embed JavaScript file -->
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    
-        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-        <script type="text/javascript">
-          new Twitch.Embed("twitch-embed", {
-            width: 700,
-            height: 350,
-            channel: "elu_tw",
-          });
-        </script>
+            <!-- Load the Twitch embed JavaScript file -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+            <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 710,
+                height: 430,
+                channel: "elu_tw",
+            });
+            </script>
+                <section class="news">
+                        <h3 class="titre-news">
+                            News
+                        </h3>
+                    <article class="news-article">
+                        <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
+                    </article>
+                    <div class="line-break"></div>
+                    <article class="news-article">
+                        <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
+                    </article>
+                    <div class="line-break"></div>
+
+                    <article class="news-article">
+                        <h1 class="titre-des-news">Lorem Ipsum</h1>
+                        <p class="in-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur iste, mollitia eius dicta ducimus accusantium quibusdam aspernatur repellendus minus recusandae excepturi soluta, reprehenderit veritatis possimus culpa suscipit nam voluptatum.</p>
+                    </article>
+                </section>
         </div>
+        <nav class="left-nav">
+            <ol>
+                <li class="twitter"></li>
+                <li class="facebook"></li>
+                <li class="youtube"></li>
+            </ol>
+        </nav>
     </main>
 </body>
 </html>
