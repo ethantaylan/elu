@@ -19,9 +19,10 @@ html, body {
   background-image: url("../ressources/bg-body.png");
   font-family: Montserrat-Bold, sans-serif;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
-/* line 21, ../sass/main.sass */
+/* line 22, ../sass/main.sass */
 .logo {
   height: 130px;
   border-left: 1px solid dimgray;
@@ -32,17 +33,17 @@ html, body {
   object-fit: contain;
 }
 
-/* line 29, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 .logo:hover {
   cursor: pointer;
 }
 
-/* line 32, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 .montserrat-bold {
   font-family: Montserrat-SemiBold, sans-serif;
 }
 
-/* line 35, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .box-onglets {
   width: 100%;
   display: flex;
@@ -50,7 +51,7 @@ html, body {
   border-top: 1px solid #1e1e1e;
 }
 
-/* line 41, ../sass/main.sass */
+/* line 42, ../sass/main.sass */
 main {
   margin: 0 auto;
   max-width: 1440px;
@@ -65,7 +66,7 @@ main {
   position: relative;
 }
 
-/* line 54, ../sass/main.sass */
+/* line 55, ../sass/main.sass */
 .twitter {
   background-image: url("../ressources/twitter-grey.png");
   background-size: contain;
@@ -74,14 +75,14 @@ main {
   width: 20px;
 }
 
-/* line 61, ../sass/main.sass */
+/* line 62, ../sass/main.sass */
 .twitter:hover {
   background-image: url("../ressources/twitter.png");
   cursor: pointer;
   transition: 0.5s;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 .youtube {
   background-image: url("../ressources/youtube-grey.png");
   background-size: contain;
@@ -90,14 +91,14 @@ main {
   width: 20px;
 }
 
-/* line 73, ../sass/main.sass */
+/* line 74, ../sass/main.sass */
 .youtube:hover {
   background-image: url("../ressources/youtube.png");
   cursor: pointer;
   transition: 0.5s;
 }
 
-/* line 79, ../sass/main.sass */
+/* line 80, ../sass/main.sass */
 .facebook {
   background-image: url("../ressources/fb-grey.png");
   background-size: contain;
@@ -107,14 +108,14 @@ main {
   transition: 0.5s;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 89, ../sass/main.sass */
 .facebook:hover {
   background-image: url("../ressources/fb.png");
   cursor: pointer;
   transition: 0.5s;
 }
 
-/* line 93, ../sass/main.sass */
+/* line 94, ../sass/main.sass */
 ol {
   display: flex;
   flex-direction: row;
@@ -125,19 +126,19 @@ ol {
   justify-content: space-around;
 }
 
-/* line 102, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 .follow {
   margin-right: 20px;
 }
 
-/* line 105, ../sass/main.sass */
+/* line 106, ../sass/main.sass */
 .follow-me {
   font-family: Montserrat-SemiBold, sans-serif;
   color: #818181;
   font-size: 15px;
 }
 
-/* line 110, ../sass/main.sass */
+/* line 111, ../sass/main.sass */
 header {
   width: 100%;
   display: flex;
@@ -147,7 +148,7 @@ header {
   background-color: black;
 }
 
-/* line 118, ../sass/main.sass */
+/* line 119, ../sass/main.sass */
 .twitch-nav {
   color: #975fff;
   font-family: Montserrat-Semibold, sans-serif;
@@ -160,14 +161,14 @@ header {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-/* line 129, ../sass/main.sass */
+/* line 130, ../sass/main.sass */
 .twitch-nav:hover {
   background-color: #6441A4;
   color: black;
   cursor: pointer;
 }
 
-/* line 134, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 .left-nav {
   position: fixed;
   bottom: 1%;
@@ -179,12 +180,12 @@ header {
   image-rendering: crisp-edges;
   z-index: 999;
 }
-/* line 144, ../sass/main.sass */
+/* line 145, ../sass/main.sass */
 .left-nav:hover {
   cursor: pointer;
 }
 
-/* line 147, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 .news {
   padding: 15px;
   width: 270px;
@@ -198,14 +199,14 @@ header {
   border: 1px solid #1e1e1e;
   transition: 1s;
 }
-/* line 159, ../sass/main.sass */
+/* line 160, ../sass/main.sass */
 .news:hover {
   border: 1px solid orange;
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.2);
   transition: 1s;
 }
 
-/* line 164, ../sass/main.sass */
+/* line 165, ../sass/main.sass */
 .line-break {
   height: 1px;
   width: 100%;
@@ -214,12 +215,12 @@ header {
   margin-bottom: 15px;
 }
 
-/* line 171, ../sass/main.sass */
+/* line 172, ../sass/main.sass */
 .date {
   color: gray;
 }
 
-/* line 173, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 .news-article {
   font-size: 14px;
   color: white;
@@ -237,12 +238,12 @@ header {
   padding: 10px;
 }
 
-/* line 190, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 .titre-des-news {
   font-family: Montseerrat-SemiBold, sans-serif;
 }
 
-/* line 193, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 .titre-news {
   color: orange;
   font-size: 14px;
@@ -250,7 +251,7 @@ header {
   margin-left: 20px;
 }
 
-/* line 199, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 .right-nav {
   color: white;
   font-family: Montserrat-Regular, sans-serif;
@@ -265,13 +266,13 @@ header {
   margin-top: 20px;
 }
 
-/* line 212, ../sass/main.sass */
+/* line 213, ../sass/main.sass */
 .right-nav-ol {
   display: flex;
   align-items: center;
 }
 
-/* line 216, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 .li-right {
   white-space: nowrap;
   text-decoration: none;
@@ -281,7 +282,7 @@ header {
   color: white;
 }
 
-/* line 224, ../sass/main.sass */
+/* line 225, ../sass/main.sass */
 .arrow {
   color: white;
   margin-right: 20px;
@@ -295,7 +296,7 @@ header {
   margin-bottom: 5px;
 }
 
-/* line 236, ../sass/main.sass */
+/* line 237, ../sass/main.sass */
 .height-header-two {
   height: 60px;
   display: flex;
@@ -303,19 +304,19 @@ header {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
-/* line 242, ../sass/main.sass */
+/* line 243, ../sass/main.sass */
 .border-gray {
   border-bottom: 1px solid #1e1e1e;
   border-top: 1px solid #1e1e1e;
 }
 
-/* line 246, ../sass/main.sass */
+/* line 247, ../sass/main.sass */
 .active {
   color: orange !important;
   font-family: Montserrat-SemiBold, sans-serif;
 }
 
-/* line 250, ../sass/main.sass */
+/* line 251, ../sass/main.sass */
 .ol-header-two {
   margin-left: 100px;
   display: flex;
@@ -323,23 +324,23 @@ header {
   font-family: Montserrat-Regular, sans-serif;
 }
 
-/* line 256, ../sass/main.sass */
+/* line 257, ../sass/main.sass */
 .li-style-two {
   display: flex;
 }
 
-/* line 259, ../sass/main.sass */
+/* line 260, ../sass/main.sass */
 .link-style {
   color: white !important;
   text-decoration: none !important;
 }
-/* line 262, ../sass/main.sass */
+/* line 263, ../sass/main.sass */
 .link-style:visited {
   color: white !important;
   text-decoration: none !important;
 }
 
-/* line 266, ../sass/main.sass */
+/* line 267, ../sass/main.sass */
 .li-right:hover {
   transition: color 0.5s;
   color: orange;
@@ -363,7 +364,7 @@ header {
  * margin-top: 10px
  * transition: 1s
  * visibility: hidden */
-/* line 288, ../sass/main.sass */
+/* line 289, ../sass/main.sass */
 .btn-nav-absolute {
   width: 5px;
   height: 5px;
@@ -373,14 +374,14 @@ header {
   border: 1px solid orange;
   padding: 28px;
 }
-/* line 296, ../sass/main.sass */
+/* line 297, ../sass/main.sass */
 .btn-nav-absolute:hover {
   transition: 0.5s;
   cursor: pointer;
   background-image: url("../ressources/toggle-hover.png");
 }
 
-/* line 301, ../sass/main.sass */
+/* line 302, ../sass/main.sass */
 .li-menu {
   display: flex;
   align-items: center;
@@ -390,7 +391,7 @@ header {
   font-family: Montserrat-Regular, sans-serif;
   font-size: 12px;
 }
-/* line 309, ../sass/main.sass */
+/* line 310, ../sass/main.sass */
 .li-menu:hover {
   filter: saturate(1);
   transition: 0.5s;
@@ -398,32 +399,32 @@ header {
   cursor: pointer;
 }
 
-/* line 315, ../sass/main.sass */
+/* line 316, ../sass/main.sass */
 .saturate {
   margin-left: 15px;
   width: 22px;
 }
 
-/* line 319, ../sass/main.sass */
+/* line 320, ../sass/main.sass */
 .twitch-box {
   border: 1px solid #1e1e1e;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.6);
   transition: 1s;
   height: 100%;
 }
-/* line 324, ../sass/main.sass */
+/* line 325, ../sass/main.sass */
 .twitch-box:hover {
   border: 1px solid orange;
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.2);
   transition: 1s;
 }
 
-/* line 329, ../sass/main.sass */
+/* line 330, ../sass/main.sass */
 .chat-twitch {
   flex-basis: 150px !important;
 }
 
-/* line 332, ../sass/main.sass */
+/* line 333, ../sass/main.sass */
 .mid-container {
   display: flex;
   flex-direction: row;
@@ -432,14 +433,14 @@ header {
   margin-top: 60px;
 }
 
-/* line 339, ../sass/main.sass */
+/* line 340, ../sass/main.sass */
 .menu {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
-/* line 344, ../sass/main.sass */
+/* line 345, ../sass/main.sass */
 .partenaire {
   width: 33%;
   height: 70px;
@@ -448,7 +449,7 @@ header {
   justify-content: space-between;
 }
 
-/* line 351, ../sass/main.sass */
+/* line 352, ../sass/main.sass */
 .partenaire-img {
   width: 70px;
   margin-left: 10px;
@@ -456,30 +457,30 @@ header {
   object-fit: contain;
 }
 
-/* line 357, ../sass/main.sass */
+/* line 358, ../sass/main.sass */
 .li-partenaire {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-/* line 362, ../sass/main.sass */
+/* line 363, ../sass/main.sass */
 .blacksea {
   width: 110px;
 }
 
-/* line 365, ../sass/main.sass */
+/* line 366, ../sass/main.sass */
 .win {
   width: 55px;
 }
 
-/* line 368, ../sass/main.sass */
+/* line 369, ../sass/main.sass */
 .onglets {
   background-color: rgba(15, 15, 15, 0.8);
   border-bottom: 1px solid black;
 }
 
-/* line 372, ../sass/main.sass */
+/* line 373, ../sass/main.sass */
 .about-me-contact-planning-home-arrow {
   width: 100%;
   height: 100%;
@@ -492,14 +493,14 @@ header {
   margin: 0;
 }
 
-/* line 383, ../sass/main.sass */
+/* line 384, ../sass/main.sass */
 .nom-prenom {
   color: white;
   margin-left: 40px;
   font-size: 28px;
 }
 
-/* line 388, ../sass/main.sass */
+/* line 389, ../sass/main.sass */
 .box-about-me {
   position: absolute;
   left: 50%;
@@ -514,7 +515,7 @@ header {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
 }
 
-/* line 401, ../sass/main.sass */
+/* line 402, ../sass/main.sass */
 .description-about-me {
   color: white;
   font-size: 14px;
@@ -524,12 +525,12 @@ header {
   letter-spacing: 0.5px;
 }
 
-/* line 409, ../sass/main.sass */
+/* line 410, ../sass/main.sass */
 .about-me-style {
   color: orange;
 }
 
-/* line 412, ../sass/main.sass */
+/* line 413, ../sass/main.sass */
 .contact {
   height: 100%;
   width: 100%;
@@ -538,7 +539,7 @@ header {
   background-repeat: no-repeat;
 }
 
-/* line 419, ../sass/main.sass */
+/* line 420, ../sass/main.sass */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -552,7 +553,7 @@ input[type=text], select, textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 433, ../sass/main.sass */
+/* line 434, ../sass/main.sass */
 input[type=submit] {
   background-color: black;
   color: white;
@@ -562,19 +563,19 @@ input[type=submit] {
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid orange;
 }
-/* line 441, ../sass/main.sass */
+/* line 442, ../sass/main.sass */
 input[type=submit]:hover {
   background-color: orange;
   color: black;
 }
 
-/* line 447, ../sass/main.sass */
+/* line 448, ../sass/main.sass */
 input[type=submit]:hover {
   background-color: ora;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 452, ../sass/main.sass */
+/* line 453, ../sass/main.sass */
 .container {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
   border: 1px solid #1e1e1e;
