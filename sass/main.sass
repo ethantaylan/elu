@@ -13,22 +13,24 @@
 html
     margin: 0
     background-color: black
-    height: 100%
+    height: auto
     width: 100%
     font-family: Montserrat-Bold, sans-serif
     scroll-behavior: smooth
-    overflow: hidden
+
+.heightcent
+    height: 100%
 
 body
     background-image: url("../ressources/bg-body.png")
-    overflow: hidden
     scroll-behavior: smooth
-    height: 100%
+    height: auto
     width: 100%
 
 .home-active
     transform: scale(1.1)
     color: orange !important
+    font-family: Montserrat-SemiBold, sans-serif
 .logo
     height: 130px
     border-left: 1px solid dimgray
@@ -484,3 +486,13 @@ input[type=submit]:hover
     height: 70%
     margin: 0 auto
     margin-top: 60px
+.center-div
+    font-family: Montserrat-Regular
+    text-shadow: 0 0 5px black
+    width: 90%
+    justify-content: space-between
+    margin: 0 auto
+.align
+    display: flex
+    flex-direction: row
+    align-items: center
