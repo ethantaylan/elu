@@ -26,6 +26,9 @@ body
     height: 100%
     width: 100%
 
+.home-active
+    transform: scale(1.1)
+    color: orange !important
 .logo
     height: 130px
     border-left: 1px solid dimgray
@@ -250,6 +253,7 @@ header
     padding-right: 7px
     margin-top: 5px
     margin-bottom: 5px
+    cursor: pointer
 
 .height-header-two
     height: 60px
@@ -277,14 +281,16 @@ header
 .link-style
     color: white !important
     text-decoration: none !important
+    cursor: pointer !important
     &:visited
         color: white !important
         text-decoration: none !important
+        cursor: pointer !important
 
 .li-right:hover
     transition: color 0.5s
     color: orange
-    cursor: pointer
+    cursor: pointer !important
 /*.nav-absolute
     background-color: rgba(0, 0, 0, 0.5)
     height: 300px
